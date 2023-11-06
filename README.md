@@ -1,4 +1,4 @@
 ## Chimera
 
-Chimera is a smart contract fuzzer-agnostic framework. Write once, run everywhere.
+Chimera is a smart contract property-based testing framework. Write once, run everywhere.
 
