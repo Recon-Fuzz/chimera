@@ -58,6 +58,15 @@ contract HalmosAsserts is Test, Asserts {
         return value;
     }
 
+    function between(
+        int256 value,
+        int256 low,
+        int256 high
+    ) internal virtual override returns (int256) {
+        vm.assume(value >= low && value <= high);
+        return value;
+    }
+
     function precondition(bool p) internal virtual override {
         vm.assume(p);
     }

@@ -68,6 +68,21 @@ contract CryticAsserts is Asserts {
         return value;
     }
 
+    function between(
+        int256 value,
+        int256 low,
+        int256 high
+    ) internal virtual override returns (int256) {
+        if (value < low || value > high) {
+            int range = high - low + 1;
+            int clamped = (value - low) % (range);
+            if (clamped < 0) clamped += range;
+            int ans = low + clamped;
+            return ans;
+        }
+        return value;
+    }
+
     function precondition(bool p) internal virtual override {
         require(p);
     }
