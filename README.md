@@ -15,6 +15,9 @@ Chimera addresses this problem by enabling a "write once, run everywhere" approa
 
 ### Features
 
-- Boilerplate contracts for Foundry, Echidna, Medusa, and Halmos tests
-- Scripts to convert results from one tool to another
-- TBD
+- [x] Boilerplate contracts for Foundry, Echidna, Medusa, and Halmos tests
+- [ ] Python installation
+- [ ] `chimera init`: quickstarts a property-based testing setup for Foundry, Echidna, Medusa and Halmos
+- [ ] `chimera install`: installs Foundry, Echidna, Medusa, and Halmos
+- [ ] `chimera convert`: converts tx sequences from one tool to another
+- [ ] `chimera TOOL`: runs a property-based testing TOOL against the framework setup
