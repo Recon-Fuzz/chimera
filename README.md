@@ -2,6 +2,12 @@
 
 Chimera is a smart contract property-based testing framework. Write once, run everywhere.
 
+### Installation
+
+```bash
+forge install aviggiano/chimera
+```
+
 ### Motivation
 
 When writing property-based tests, developers commonly face several issues: 
