@@ -2,6 +2,8 @@
 
 Chimera is a smart contract property-based testing framework. Write once, run everywhere.
 
+ <a href="https://github.com/Recon-Fuzz/chimera/assets/3029017/02347c73-13aa-4f3b-a491-53768254b0b1"><img src="https://github.com/Recon-Fuzz/chimera/assets/3029017/02347c73-13aa-4f3b-a491-53768254b0b1" width="300"/></a>
+
 ### Installation
 
 ```bash
