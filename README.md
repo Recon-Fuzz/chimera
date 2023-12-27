@@ -7,7 +7,7 @@ Chimera is a smart contract property-based testing framework. Write once, run ev
 ### Installation
 
 ```bash
-forge install aviggiano/chimera
+forge install Recon-Fuzz/chimera
 ```
 
 ### Motivation
