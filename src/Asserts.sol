@@ -14,9 +14,9 @@ abstract contract Asserts {
 
     function t(bool b, string memory reason) internal virtual;
 
-    function between(uint256 value, uint256 low, uint256 high) internal virtual returns(uint256);
+    function between(uint256 value, uint256 low, uint256 high) internal virtual returns (uint256);
 
-    function between(int256 value, int256 low, int256 high) internal virtual returns(int256);
+    function between(int256 value, int256 low, int256 high) internal virtual returns (int256);
 
     function precondition(bool p) internal virtual;
 }

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./Setup.sol";
-import "./Asserts.sol";
+import {BaseProperties} from "./BaseProperties.sol";
+import {Asserts} from "./Asserts.sol";
 
-abstract contract BaseTargetFunctions is Setup, Asserts {}
+abstract contract BaseTargetFunctions is BaseProperties, Asserts {}
