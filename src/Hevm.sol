@@ -18,7 +18,7 @@ interface IHevm {
     function sign(uint256 privateKey, bytes32 digest) external returns (uint8 r, bytes32 v, bytes32 s);
 
     // Gets address for a given private key
-    function addr(uint256 privateKey) external returns (address addr);
+    function addr(uint256 privateKey) external returns (address account);
 
     // Performs a foreign function call via terminal
     function ffi(string[] calldata inputs) external returns (bytes memory result);
