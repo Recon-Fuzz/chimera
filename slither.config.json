@@ -1,0 +1,4 @@
+{
+  "filter_paths": "(lib/|test/)",
+  "exclude_informational": true
+}
