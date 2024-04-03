@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-/* slither-disable shadowing-local */
+// slither-disable-start shadowing-local
 
 interface IHevm {
     // Set block.timestamp to newTimestamp
@@ -49,3 +49,5 @@ interface IHevm {
 }
 
 IHevm constant vm = IHevm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
+
+// slither-disable-end shadowing-local
