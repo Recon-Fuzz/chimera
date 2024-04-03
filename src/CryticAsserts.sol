@@ -7,33 +7,45 @@ contract CryticAsserts is Asserts {
     event Log(string);
 
     function gt(uint256 a, uint256 b, string memory reason) internal virtual override {
-        emit Log(reason);
-        assert(a > b);
+        if (!(a > b)) {
+            emit Log(reason);
+            assert(false);
+        }
     }
 
     function gte(uint256 a, uint256 b, string memory reason) internal virtual override {
-        emit Log(reason);
-        assert(a >= b);
+        if (!(a >= b)) {
+            emit Log(reason);
+            assert(false);
+        }
     }
 
     function lt(uint256 a, uint256 b, string memory reason) internal virtual override {
-        emit Log(reason);
-        assert(a < b);
+        if (!(a < b)) {
+            emit Log(reason);
+            assert(false);
+        }
     }
 
     function lte(uint256 a, uint256 b, string memory reason) internal virtual override {
-        emit Log(reason);
-        assert(a <= b);
+        if (!(a <= b)) {
+            emit Log(reason);
+            assert(false);
+        }
     }
 
     function eq(uint256 a, uint256 b, string memory reason) internal virtual override {
-        emit Log(reason);
-        assert(a == b);
+        if (!(a == b)) {
+            emit Log(reason);
+            assert(false);
+        }
     }
 
     function t(bool b, string memory reason) internal virtual override {
-        emit Log(reason);
-        assert(b);
+        if (!b) {
+            emit Log(reason);
+            assert(false);
+        }
     }
 
     function between(uint256 value, uint256 low, uint256 high) internal virtual override returns (uint256) {
