@@ -1,5 +1,7 @@
-// SPDX-License-Identifier: Unlicense
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+
+/* slither-disable shadowing-local */
 
 interface IHevm {
     // Set block.timestamp to newTimestamp
