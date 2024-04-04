@@ -21,7 +21,7 @@ Writing invariant tests that work seamlessly with Foundry, Echidna, Medusa, and 
 
 Chimera addresses this problem by enabling a "write once, run everywhere" approach.
 
-## Limitations
+### Limitations
 
 Chimera currently only supports cheatcodes implemented by [HEVM](https://hevm.dev/ds-test-tutorial.html?highlight=cheat#supported-cheat-codes). 
 
