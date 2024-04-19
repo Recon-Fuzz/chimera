@@ -46,6 +46,9 @@ interface IHevm {
 
     // Labels the address in traces
     function label(address addr, string calldata label) external;
+
+    /// Sets an address' code.
+    function etch(address target, bytes calldata newRuntimeBytecode) external;
 }
 
 IHevm constant vm = IHevm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);

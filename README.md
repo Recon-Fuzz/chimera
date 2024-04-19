@@ -25,7 +25,9 @@ Chimera addresses this problem by enabling a "write once, run everywhere" approa
 
 Chimera currently only supports cheatcodes implemented by [HEVM](https://hevm.dev/ds-test-tutorial.html?highlight=cheat#supported-cheat-codes). 
 
-Foundry has extended these and offers functionality not supported by the HEVM cheatcodes, subsequently these must be accounted for when adding Chimera to a Foundry project as they will cause issues when running Echidna and Medusa. If adding Chimera to an existing Foundry project ensure that there are no cheatcodes implemented that aren't supported by HEVM as they will throw the following error: `VM failed for unhandled reason, BadCheatCode <cheatcode hash>`. 
+Foundry has extended these and offers functionality not supported by the HEVM cheatcodes, subsequently these must be accounted for when adding Chimera to a Foundry project as they will cause issues when running Echidna and Medusa. If adding Chimera to an existing Foundry project ensure that there are no cheatcodes implemented that aren't supported by HEVM as they will throw the following error: `VM failed for unhandled reason, BadCheatCode <cheatcode hash>`.  
+
+While **medusa** supports `etch`, echidna does not support it yet. Please note when using `etch` in an echidna environment it will not work as expected.
 
 ### Features
 
