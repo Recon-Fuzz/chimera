@@ -35,6 +35,13 @@ interface IHevm {
     // Performs the next smart contract call with specified `msg.sender`
     function prank(address newSender) external;
 
+    // Sets msg.sender to the specified sender until stopPrank() is called
+    // NOTE: not currently supported by Medusa
+    function startPrank(address sender) external;
+
+    // Resets msg.sender to the default sender
+    function stopPrank() external;
+
     // Creates a new fork with the given endpoint and the latest block and returns the identifier of the fork
     function createFork(string calldata urlOrAlias) external returns (uint256);
 
