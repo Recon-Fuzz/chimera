@@ -31,9 +31,4 @@ While **medusa** supports `etch`, echidna does not support it yet. Please note w
 
 ### Features
 
-- [x] Boilerplate contracts for Foundry, Echidna, Medusa, and Halmos tests
-- [ ] Python installation
-- [ ] `chimera init`: quickstarts a property-based testing setup for Foundry, Echidna, Medusa and Halmos
-- [ ] `chimera install`: installs Foundry, Echidna, Medusa, and Halmos
-- [ ] `chimera convert`: converts tx sequences from one tool to another
-- [ ] `chimera TOOL`: runs a property-based testing TOOL against the framework setup
+- [x] Boilerplate contracts for Foundry, Echidna, Medusa, Halmos and Kontrol tests
