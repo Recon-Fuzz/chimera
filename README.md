@@ -27,13 +27,12 @@ Chimera currently only supports cheatcodes implemented by [HEVM](https://hevm.de
 
 Foundry has extended these and offers functionality not supported by the HEVM cheatcodes, subsequently these must be accounted for when adding Chimera to a Foundry project as they will cause issues when running Echidna and Medusa. If adding Chimera to an existing Foundry project ensure that there are no cheatcodes implemented that aren't supported by HEVM as they will throw the following error: `VM failed for unhandled reason, BadCheatCode <cheatcode hash>`.  
 
-
-### Help
-
-Join the Recon Discord: https://getrecon.xyz/discord
-
 While **medusa** supports `etch`, echidna does not support it yet. Please note when using `etch` in an echidna environment it will not work as expected.
 
 ### Features
 
 - [x] Boilerplate contracts for Foundry, Echidna, Medusa, Halmos and Kontrol tests
+
+### Help
+
+Join the Recon Discord: https://getrecon.xyz/discord
