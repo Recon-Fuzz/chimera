@@ -12,6 +12,10 @@ abstract contract Asserts {
 
     function eq(uint256 a, uint256 b, string memory reason) internal virtual;
 
+    function approxEq(uint256 a, uint256 b, uint256 maxPercentDelta, string memory reason) internal virtual;
+
+    function approxEq(int256 a, int256 b, uint256 maxPercentDelta, string memory reason) internal virtual;
+
     function t(bool b, string memory reason) internal virtual;
 
     function between(uint256 value, uint256 low, uint256 high) internal virtual returns (uint256);

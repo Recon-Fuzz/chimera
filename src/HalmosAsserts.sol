@@ -25,6 +25,14 @@ contract HalmosAsserts is Test, Asserts {
         assertEq(a, b, reason);
     }
 
+    function approxEq(uint256 a, uint256 b, uint256 maxPercentDelta, string memory message) internal virtual override {
+        assertApproxEqRel(a, b, maxPercentDelta, message);
+    }
+
+    function approxEq(int256 a, int256 b, uint256 maxPercentDelta, string memory message) internal virtual override {
+        assertApproxEqRel(a, b, maxPercentDelta, message);
+    }
+    
     function t(bool b, string memory reason) internal virtual override {
         assertTrue(b, reason);
     }

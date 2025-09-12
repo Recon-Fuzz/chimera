@@ -41,6 +41,28 @@ contract CryticAsserts is Asserts {
         }
     }
 
+    function approxEq(uint256 a, uint256 b, uint256 maxPercentDelta, string memory message) internal virtual override {
+        if (b == 0) return eq(a, b, message); // If the right is 0, left must be too.
+
+        uint256 diff = a > b ? a - b : b - a;
+        uint256 percentDelta = diff * 1e18 / b;
+
+        gt(maxPercentDelta, percentDelta, message);
+    }
+
+    function approxEq(int256 a, int256 b, uint256 maxPercentDelta, string memory message) internal virtual override {
+        if (b == 0) return t(a == b, message); // If the right is 0, left must be too.
+
+        int256 d = a - b;
+        uint256 diff = d >= 0 ? uint256(d) : uint256(-d);
+        uint256 base = b >= 0 ? uint256(b) : uint256(-b);
+
+        // percentDelta = |a - b| / |b| in 1e18 precision
+        uint256 percentDelta = (diff * 1e18) / base;
+
+        gt(maxPercentDelta, percentDelta, message);
+    }
+
     function t(bool b, string memory reason) internal virtual override {
         if (!b) {
             emit Log(reason);
