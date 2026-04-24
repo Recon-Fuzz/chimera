@@ -1,3 +1,5 @@
+[![By Recon](https://getrecon.xyz/api/badge?type=recon)](https://getrecon.xyz)
+
 ## Chimera
 
 Chimera is a smart contract property-based testing framework. Write once, run everywhere.
